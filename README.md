@@ -1,4 +1,4 @@
-# MERN Product Store 🛒
+# MERN Product Store 
 
 A simple full-stack product management system built with the MERN stack. You can add, update, delete, and view products. It also has a dark/light mode toggle!
 
