@@ -1,6 +1,6 @@
-# MERN Product Store 
+# mern-product-store 
 
-A simple full-stack product management system built with the MERN stack. You can add, update, delete, and view products. It also has a dark/light mode toggle!
+A simple full-stack product management system built with the MERN stack. You can add, update, delete and view products. It also has a dark/light mode toggle!
 
 ---
 
@@ -27,7 +27,7 @@ A simple full-stack product management system built with the MERN stack. You can
 ## Project Structure
 
 ```
-MERN_PS/
+mern-product-store/
 ├── Backend/        → Express server, API routes, MongoDB models
 ├── Frontend/       → React app (components, pages)
 ├── .env            → Your environment variables (don't share this!)
@@ -47,8 +47,8 @@ MERN_PS/
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/jahidunfarabi/MERN_PS.git
-cd MERN_PS
+git clone https://github.com/jahidunfarabi/mern-product-store.git
+cd mern-product-store
 ```
 
 **2. Setup backend**
