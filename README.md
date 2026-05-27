@@ -1,146 +1,118 @@
-# 🛒 Product Store & Inventory Manager
+# MERN Product Store 🛒
 
-A full-stack **MERN** application for managing products and inventory in real time. Built with a clean MVC architecture, RESTful API design, and a responsive React.js UI featuring dark/light mode.
-
----
-
-## 🚀 Tech Stack
-
-| Layer      | Technology                          |
-|------------|-------------------------------------|
-| Frontend   | React.js, CSS3, Responsive UI       |
-| Backend    | Node.js, Express.js                 |
-| Database   | MongoDB                             |
-| API Style  | RESTful (10+ routes)                |
-| Architecture | MVC (Model-View-Controller)       |
+A simple full-stack product management system built with the MERN stack. You can add, update, delete, and view products. It also has a dark/light mode toggle!
 
 ---
 
-## ✨ Features
+## What I used to build this
 
-- 📦 **Full CRUD Operations** — Create, Read, Update, and Delete products in real time
-- 🔗 **10+ RESTful API Routes** — Clean, well-structured endpoints for all product operations
-- 🏗️ **MVC Architecture** — Separation of concerns for maintainable, scalable code
-- ⚡ **Optimised MongoDB Queries** — Efficient data retrieval and manipulation
-- 🌗 **Dark / Light Mode Toggle** — Seamless theme switching across the entire UI
-- 📱 **Fully Responsive** — Works across all device sizes (mobile, tablet, desktop)
+- **Frontend** - React.js
+- **Backend** - Node.js, Express.js
+- **Database** - MongoDB
+- **Styling** - CSS3 (fully responsive)
 
 ---
 
-## 📁 Project Structure
+## Features
+
+- ✅ Add a new product
+- ✅ View all products
+- ✅ Update a product
+- ✅ Delete a product
+- ✅ Dark mode / Light mode toggle
+- ✅ Works on mobile and desktop
+
+---
+
+## Project Structure
 
 ```
 MERN_PS/
-├── Backend/
-│   ├── models/          # Mongoose data models
-│   ├── routes/          # Express API route handlers
-│   ├── controllers/     # Business logic (MVC controllers)
-│   └── server.js        # Express app entry point
-├── Frontend/
-│   ├── src/
-│   │   ├── components/  # Reusable React components
-│   │   ├── pages/       # Page-level components
-│   │   └── App.jsx      # Root component with theme toggle
-│   └── public/
-├── .env                 # Environment variables (root level)
-├── package.json
-└── README.md
+├── Backend/        → Express server, API routes, MongoDB models
+├── Frontend/       → React app (components, pages)
+├── .env            → Your environment variables (don't share this!)
+└── package.json
 ```
 
 ---
 
-## 🛠️ Getting Started
+## How to run this project locally
 
-### Prerequisites
+### You'll need
 
-- [Node.js](https://nodejs.org/) (v18+)
-- [MongoDB](https://www.mongodb.com/) (local or Atlas)
-- [Git](https://git-scm.com/)
+- Node.js installed
+- MongoDB (local or MongoDB Atlas)
 
-### Installation
+### Steps
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/jahidunfarabi/MERN_PS.git
-   cd MERN_PS
-   ```
+**1. Clone the repo**
+```bash
+git clone https://github.com/jahidunfarabi/MERN_PS.git
+cd MERN_PS
+```
 
-2. **Set up the backend**
-   ```bash
-   cd Backend
-   npm install
-   ```
+**2. Setup backend**
+```bash
+cd Backend
+npm install
+```
 
-3. **Configure environment variables**
+**3. Create a `.env` file in the root folder**
+```
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+```
 
-   A `.env` file is already present at the project root. Update it with your values:
-   ```env
-   MONGO_URI=your_mongodb_connection_string
-   PORT=5000
-   ```
+**4. Setup frontend**
+```bash
+cd ../Frontend
+npm install
+```
 
-4. **Set up the frontend**
-   ```bash
-   cd ../Frontend
-   npm install
-   ```
-
-### Running the App
-
-**Start the backend server:**
+**5. Run backend** (Terminal 1)
 ```bash
 cd Backend
 npm run dev
 ```
 
-**Start the frontend (in a new terminal):**
+**6. Run frontend** (Terminal 2)
 ```bash
 cd Frontend
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173` (Vite default) or `http://localhost:3000`.
+Now open your browser and go to → `http://localhost:5173`
 
 ---
 
-## 🔌 API Endpoints
+## API Routes
 
-| Method | Endpoint              | Description            |
-|--------|-----------------------|------------------------|
-| GET    | `/api/products`       | Fetch all products     |
-| GET    | `/api/products/:id`   | Fetch a single product |
-| POST   | `/api/products`       | Create a new product   |
-| PUT    | `/api/products/:id`   | Update a product       |
-| DELETE | `/api/products/:id`   | Delete a product       |
-
-> Additional routes handle filtering, sorting, and inventory-specific operations.
+| Method | Route | What it does |
+|--------|-------|-------------|
+| GET | `/api/products` | Get all products |
+| GET | `/api/products/:id` | Get one product |
+| POST | `/api/products` | Add a new product |
+| PUT | `/api/products/:id` | Update a product |
+| DELETE | `/api/products/:id` | Delete a product |
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-> _Add screenshots of your UI here (dark mode & light mode views recommended)._
-
----
-
-## 🌱 Future Improvements
-
-- [ ] JWT-based authentication and user accounts
-- [ ] Product categories and search/filter functionality
-- [ ] Pagination for large inventory lists
-- [ ] Stock alert notifications
+> Coming soon...
 
 ---
 
-## 👨‍💻 Author
+## What I want to add next
 
-**MD Jahidun Muntaka Farabi**  
-BSc in Computer Science & Engineering — AIUB  
-📧 [jahidunmuntaka25@gmail.com](mailto:jahidunmuntaka25@gmail.com)  
-🔗 [LinkedIn](https://linkedin.com) | [GitHub](https://github.com/jahidunfarabi) 
+- [ ] User login / signup
+- [ ] Search and filter products
+- [ ] Pagination
 
 ---
 
-## 📄 License
+## Made by
 
-This project is open source and available under the [MIT License](LICENSE).
+**Jahidun Muntaka Farabi**  
+📧 jahidunmuntaka25@gmail.com  
+🔗 [GitHub](https://github.com/jahidunfarabi)
